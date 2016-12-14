@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'haml', '~>4.0.7'
+gem 'pg'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
@@ -22,7 +23,6 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
   gem 'byebug', platform: :mri
 end
 
@@ -32,8 +32,4 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-end
-
-group :staging, :production do
-  gem 'pg'
 end
