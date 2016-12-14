@@ -1,3 +1,11 @@
 .DS_Store
 .ruby-gemset
 .ruby-version
+.bundle
+db/*.sqlite3
+db/*.sqlite3-journal
+log/*
+tmp/*
+!log/.keep
+!tmp/.keep
+.byebug_history
