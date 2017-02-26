@@ -49,7 +49,16 @@
         .row
           .col-lg-8.col-md-7.col-sm-6
             %h1 Pair Programming Partnership
-            %p.lead Students, gain experience. Developers, earn bonuses. Businesses, hire local talent.
+            %p.lead
+              Students,
+              = succeed '.' do
+                = link_to 'gain experience', '#'
+              Developers,
+              = succeed '.' do
+                = link_to 'earn bonuses', '#'
+              Businesses,
+              = succeed '.' do
+                = link_to 'hire local talent', '#'
       %main
         = yield
       %footer#footer
