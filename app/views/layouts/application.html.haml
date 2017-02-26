@@ -1,39 +1,39 @@
 !!! 5
-%html
+%html{lang: 'en-US'}
   %head
     %title Pair Programming Partnership
     = csrf_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag 'custom.min'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
+  %body{class: page_class}
     .navbar.navbar-toggleable-md.fixed-top.navbar-inverse.bg-primary
-      %button.navbar-toggler{type: "button", 'data-toggle': "collapse", 'data-target': "#navbarResponsive", 'aria-controls': "navbarResponsive", 'aria-expanded': "false", 'aria-label': "Toggle navigation"}
+      %button.navbar-toggler{navbar_button_attributes}
         %span.navbar-toggler-icon
       .container
         #navbarResponsive.collapse.navbar-collapse
-          = link_to "P<sub>3</sub>".html_safe, "/", class: "navbar-brand"
+          = link_to "P<sub>3</sub>".html_safe, '/', class: 'navbar-brand'
           %ul.navbar-nav
             %li.nav-item.dropdown
-              = link_to "Menu Item <span class=\"caret\"></span>".html_safe, "#", id: "themes", class: "nav-link dropdown-toggle", 'data-toggle': "dropdown"
-              .dropdown-menu{'aria-labelledby': "themes"}
-                = link_to "TODO", "#", class: 'dropdown-item'
+              = link_to "Menu Item <span class=\"caret\"></span>".html_safe, '#', id: 'TODO', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
+              .dropdown-menu{'aria-labelledby': 'TODO'}
+                = link_to "TODO", '#', class: 'dropdown-item'
                 .dropdown-divider
-                = link_to "TODO", "#", class: 'dropdown-item'
-                = link_to "TODO", "#", class: 'dropdown-item'
-                = link_to "TODO", "#", class: 'dropdown-item'
-                = link_to "TODO", "#", class: 'dropdown-item'
+                = link_to "TODO", '#', class: 'dropdown-item'
+                = link_to "TODO", '#', class: 'dropdown-item'
+                = link_to "TODO", '#', class: 'dropdown-item'
+                = link_to "TODO", '#', class: 'dropdown-item'
             %li.nav-item
-              = link_to "Get Started", "#", class: "nav-link"
+              = link_to "Get Started", '#', class: 'nav-link'
             %li.nav-item
-              = link_to "Details", "#", class: "nav-link"
+              = link_to "Details", '#', class: 'nav-link'
             %li.nav-item
-              = link_to "Another link", "#", class: "nav-link"
+              = link_to "Another link", '#', class: 'nav-link'
           %ul.nav.navbar-nav.ml-auto
             %li.nav-item
-              = link_to "Support", "#", class: "nav-link"
+              = link_to "Support", '#', class: 'nav-link'
             %li.nav-item
-              = link_to "TODO", "#", class: "nav-link"
+              = link_to "TODO", '#', class: 'nav-link'
     .container
       #banner.page-header
         .row
@@ -46,9 +46,9 @@
         .row
           .col-lg-12
             %ul.list-unstyled
-              %li.float-lg-right= link_to "Back to top", "#top"
-              %li= link_to "TODO", "#"
-              %li= link_to "TODO", "#"
-              %li= link_to "TODO", "#"
+              %li.float-lg-right= link_to "Back to top", '#top'
+              %li= link_to "TODO", '#'
+              %li= link_to "TODO", '#'
+              %li= link_to "TODO", '#'
               %li= link_to "Bootswatch Example", "/pages/bootswatch_example"
             %p © 2016 Pair Programming Partnership. All rights reserved.
