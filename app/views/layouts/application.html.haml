@@ -15,40 +15,53 @@
           = link_to "P<sub>3</sub>".html_safe, '/', class: 'navbar-brand'
           %ul.navbar-nav
             %li.nav-item.dropdown
-              = link_to "Menu Item <span class=\"caret\"></span>".html_safe, '#', id: 'TODO', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
+              = link_to "Get Started <span class=\"caret\"></span>".html_safe, '#', id: 'TODO', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
               .dropdown-menu{'aria-labelledby': 'TODO'}
                 = link_to "TODO", '#', class: 'dropdown-item'
                 .dropdown-divider
-                = link_to "TODO", '#', class: 'dropdown-item'
-                = link_to "TODO", '#', class: 'dropdown-item'
-                = link_to "TODO", '#', class: 'dropdown-item'
-                = link_to "TODO", '#', class: 'dropdown-item'
+                = link_to "Students", '#', class: 'dropdown-item'
+                = link_to "Pro Developers", '#', class: 'dropdown-item'
+                = link_to "Businesses", '#', class: 'dropdown-item'
+                = link_to "Schools", '#', class: 'dropdown-item'
             %li.nav-item
-              = link_to "Get Started", '#', class: 'nav-link'
+              = link_to "Why?", '#', class: 'nav-link'
             %li.nav-item
-              = link_to "Details", '#', class: 'nav-link'
+              = link_to "How it Works", '#', class: 'nav-link'
             %li.nav-item
-              = link_to "Another link", '#', class: 'nav-link'
+              = link_to "Expectations", '#', class: 'nav-link'
+            %li.nav-item.dropdown
+              = link_to "About <span class=\"caret\"></span>".html_safe, '#', id: 'menu_about', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
+              .dropdown-menu{'aria-labelledby': 'menu_about'}
+                = link_to "TODO", '#', class: 'dropdown-item'
+                .dropdown-divider
+                = link_to "The Problem", '#', class: 'dropdown-item'
+                = link_to "Pair Programming?", '#', class: 'dropdown-item'
+                = link_to "Research & Evidence", '#', class: 'dropdown-item'
+                = link_to "Support", '#', class: 'dropdown-item'
+                = link_to "Contact", '#', class: 'dropdown-item'
           %ul.nav.navbar-nav.ml-auto
             %li.nav-item
-              = link_to "Support", '#', class: 'nav-link'
+              = link_to "Support/Contact", '#', class: 'nav-link'
             %li.nav-item
-              = link_to "TODO", '#', class: 'nav-link'
+              = link_to "Dashboard (calendar etc)", '#', class: 'nav-link'
     .container
       #banner.page-header
         .row
           .col-lg-8.col-md-7.col-sm-6
             %h1 Pair Programming Partnership
-            %p.lead Students, get experience. Developers, level up. Businesses, grow talented communicators.
+            %p.lead Students, gain experience. Developers, earn bonuses. Businesses, hire local talent.
       %main
         = yield
       %footer#footer
         .row
           .col-lg-12
             %ul.list-unstyled
-              %li.float-lg-right= link_to "Back to top", '#top'
-              %li= link_to "TODO", '#'
-              %li= link_to "TODO", '#'
-              %li= link_to "TODO", '#'
-              %li= link_to "Bootswatch Example", "/pages/bootswatch_example"
+              %li.float-lg-right= link_to "Dashboard", '#'
+              %li.float-lg-right= link_to "Support/Contact", '#'
+              %li= link_to "Students", '#'
+              %li= link_to "Developers", '#'
+              %li= link_to "Businesses", '#'
+              %li= link_to "Schools", '#'
+              %li= link_to "About", '#'
             %p © 2016 Pair Programming Partnership. All rights reserved.
+            %h2 v#{APP_VERSION}
