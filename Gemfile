@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'haml', '~>4.0.7'
+gem 'bootstrap'
 gem 'pg'
 
 gem 'jquery-rails'
