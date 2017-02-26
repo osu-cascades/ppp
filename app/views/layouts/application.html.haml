@@ -6,4 +6,16 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = yield
+    %header
+      %h1 Pair Programming Partnership
+    %nav
+      %ul
+        %li Home
+        %li Get Started
+        %li Help / Issues / contact
+        %li Details
+    %main
+      = yield
+    %footer
+      %p TODO Footer links
+      %p © 2016 Pair Programming Partnership. All rights reserved.
