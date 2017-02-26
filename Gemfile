@@ -11,6 +11,10 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'haml', '~>4.0.7'
 gem 'bootstrap'
+gem 'bootswatch'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 gem 'pg'
 
 gem 'jquery-rails'
