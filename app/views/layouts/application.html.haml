@@ -13,38 +13,36 @@
         %span.navbar-toggler-icon
       .container
         #navbarResponsive.collapse.navbar-collapse
-          = link_to "P<sub>3</sub>".html_safe, '/', class: 'navbar-brand'
+          = link_to 'P<sub>3</sub>'.html_safe, root_path, class: 'navbar-brand'
           %ul.navbar-nav
             %li.nav-item.dropdown
-              = link_to "Get Started <span class=\"caret\"></span>".html_safe, '#', id: 'TODO', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
+              = link_to 'Get Started <span class="caret"></span>'.html_safe, '#', id: 'TODO', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
               .dropdown-menu{'aria-labelledby': 'TODO'}
-                = link_to "TODO", '#', class: 'dropdown-item'
-                .dropdown-divider
-                = link_to "Students", '/pages/students', class: 'dropdown-item'
-                = link_to "Pro Developers", '#', class: 'dropdown-item'
-                = link_to "Businesses", '#', class: 'dropdown-item'
-                = link_to "Schools", '#', class: 'dropdown-item'
+                = link_to 'Students', page_path('students'), class: 'dropdown-item'
+                = link_to 'Pro Developers', page_path('developers'), class: 'dropdown-item'
+                = link_to 'Businesses', page_path('businesses'), class: 'dropdown-item'
+                = link_to 'Schools', page_path('schools'), class: 'dropdown-item'
             %li.nav-item
-              = link_to "Why?", '#', class: 'nav-link'
+              = link_to 'Why?', '#', class: 'nav-link'
             %li.nav-item
-              = link_to "How it Works", '#', class: 'nav-link'
+              = link_to 'How it Works', '#', class: 'nav-link'
             %li.nav-item
-              = link_to "Expectations", '#', class: 'nav-link'
+              = link_to 'Expectations', '#', class: 'nav-link'
             %li.nav-item.dropdown
-              = link_to "About <span class=\"caret\"></span>".html_safe, '#', id: 'menu_about', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
+              = link_to 'About <span class="caret"></span>'.html_safe, '#', id: 'menu_about', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
               .dropdown-menu{'aria-labelledby': 'menu_about'}
-                = link_to "TODO", '#', class: 'dropdown-item'
+                = link_to 'About the Pair Programming Partnership', page_path('about/index'), class: 'dropdown-item'
                 .dropdown-divider
-                = link_to "The Problem", '#', class: 'dropdown-item'
-                = link_to "Pair Programming?", '#', class: 'dropdown-item'
-                = link_to "Research & Evidence", '#', class: 'dropdown-item'
-                = link_to "Support", '#', class: 'dropdown-item'
-                = link_to "Contact", '#', class: 'dropdown-item'
+                = link_to 'The Problem', '#', class: 'dropdown-item'
+                = link_to 'Pair Programming?', '#', class: 'dropdown-item'
+                = link_to 'Research & Evidence', '#', class: 'dropdown-item'
+                = link_to 'Support', '#', class: 'dropdown-item'
+                = link_to 'Contact', '#', class: 'dropdown-item'
           %ul.nav.navbar-nav.ml-auto
             %li.nav-item
-              = link_to "Support/Contact", '#', class: 'nav-link'
+              = link_to 'Support/Contact', '#', class: 'nav-link'
             %li.nav-item
-              = link_to "Dashboard (calendar etc)", '#', class: 'nav-link'
+              = link_to 'Dashboard (calendar etc)', '#', class: 'nav-link'
     .container
       #banner.page-header
         .row
@@ -53,25 +51,25 @@
             %p.lead
               Students,
               = succeed '.' do
-                = link_to 'gain experience', '#'
+                = link_to 'gain experience', page_path('students')
               Developers,
               = succeed '.' do
-                = link_to 'earn bonuses', '#'
+                = link_to 'earn bonuses', page_path('develoeprs')
               Businesses,
               = succeed '.' do
-                = link_to 'hire local talent', '#'
+                = link_to 'hire local talent', page_path('businesses')
       %main
         = yield
       %footer#footer
         .row
           .col-lg-12
             %ul.list-unstyled
-              %li.float-lg-right= link_to "Dashboard", '#'
-              %li.float-lg-right= link_to "Support/Contact", '#'
-              %li= link_to "Students", '#'
-              %li= link_to "Developers", '#'
-              %li= link_to "Businesses", '#'
-              %li= link_to "Schools", '#'
-              %li= link_to "About", '#'
+              %li.float-lg-right= link_to 'Dashboard', '#'
+              %li.float-lg-right= link_to 'Support/Contact', '#'
+              %li= link_to 'Students', page_path('students')
+              %li= link_to 'Developers', page_path('developers')
+              %li= link_to 'Businesses', page_path('businesses')
+              %li= link_to 'Schools', page_path('schools')
+              %li= link_to 'About', page_path('about/index')
             %p © 2016 Pair Programming Partnership. All rights reserved.
             %h2 v#{APP_VERSION}
