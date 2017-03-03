@@ -1,1 +1,14 @@
+- content_for :page_header do
+  %h1 Pair Programming Partnership
+  %p.lead
+    Students,
+    = succeed '.' do
+      = link_to 'gain experience', page_path('students')
+    Developers,
+    = succeed '.' do
+      = link_to 'earn bonuses', page_path('develoeprs')
+    Businesses,
+    = succeed '.' do
+      = link_to 'hire local talent', page_path('businesses')
+
 %p TODO
