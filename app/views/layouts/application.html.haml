@@ -41,8 +41,14 @@
           %ul.nav.navbar-nav.ml-auto
             %li.nav-item
               = link_to 'Support/Contact', 'https://pairprogpartnership.freshdesk.com', class: 'nav-link'
-            %li.nav-item
-              = link_to 'Dashboard (calendar etc)', '#', class: 'nav-link'
+            %li.nav-item.dropdown
+              = link_to 'Dashboard <span class="caret"></span>'.html_safe, '#', id: 'menu_dashboard', class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown'
+              .dropdown-menu{'aria-labelledby': 'menu_dashboard'}
+                = link_to 'Way Cool Dashboard (One Day)', '#', class: 'dropdown-item'
+                .dropdown-divider
+                = link_to 'Calendar', '#', class: 'dropdown-item'
+                = link_to 'Current Pairings (Trello)', 'https://trello.com/b/X7XuDDfQ/pair-programming-partnership', class: 'dropdown-item'
+                = link_to 'PPP Community (Highrise)', 'https://osucascadescomputerscience.highrisehq.com/', class: 'dropdown-item'
     .container
       #banner.page-header
         .row
