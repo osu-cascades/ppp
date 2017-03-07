@@ -11,4 +11,8 @@
     = succeed '.' do
       = link_to 'hire local talent', page_path('businesses')
 
-%p TODO
+%h2.text-center Community Partners
+#partner_company_logos
+  - 36.times do
+    .partner_logo
+      = link_to image_tag('logo_generic_200x50.png', class: 'foo', alt: 'TODO Logo', title: 'TODO Company Name'), '#'
