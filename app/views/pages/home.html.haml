@@ -11,6 +11,47 @@
     = succeed '.' do
       = link_to 'hire local talent', page_path('businesses')
 
+%h2 Program Logic Model
+
+%p= link_to 'ref', 'https://en.wikipedia.org/wiki/Logic_model'
+:plain
+  <table style="border: 1px solid #999;">
+    <tr>
+      <th style="width: 25%;">Inputs</th>
+      <th style="width: 25%;">Activities</th>
+      <th style="width: 25%;">Outputs</th>
+      <th style="width: 25%;">Outcomes/impacts</th>
+    </tr>
+    <tr>
+      <td><i>what resources go into a program</i></td>
+      <td><i>what activities the program undertakes</i></td>
+      <td><i>what is produced through those activities</i></td>
+      <td><i>the changes or benefits that result from the program</i></td>
+    </tr>
+    <tr>
+      <td>e.g. money, staff, equipment</td>
+      <td>e.g. development of materials, training programs</td>
+      <td>e.g. number of booklets produced, workshops held, people trained</td>
+      <td>e.g. increased skills/ knowledge/ confidence, leading in longer-term to promotion, new job, etc.</td>
+    </tr>
+  </table>
+%ul
+  %li Situation and Priorities (considerations that determine what inputs are needed)
+  %li Inputs (what we invest)
+  %li
+    Outputs
+    %ul
+      %li Activities (the actual tasks we do)
+      %li Participation (who we serve; customers & stakeholders)
+      %li Engagement (how those we serve engage with the activities)
+  %li
+    Outcomes/Impacts
+    %ul
+      %li Short Term (learning: awareness, knowlege, skills, motivations)
+      %li Medium Term (action: behavior, practice, decisions, policies)
+      %li Long Term (consequences: social, economic, environmental, etc.)
+
+
 %h2.text-center Community Partners
 #partner_company_logos
   - 36.times do
